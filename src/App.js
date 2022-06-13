@@ -5,6 +5,7 @@ import SidebarComponent from './components/sidebar/SidebarComponent';
 import HeaderComponent from './components/Header/HeaderComponent';
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
+import Img22 from './img22.png';
 import './App.css';
 
 
@@ -64,8 +65,12 @@ class App extends React.Component {
                                         <h5 className="card-title">Cash On Hand</h5>
                                         <h1>$92,000</h1>
                                         <h7>Saved 25%</h7>
+
+                                        <img style={{height:300,width:500,marginTop:50,borderRadius:20}} src={Img22} alt="graph"  />
                                     </div>
+                               
                                 </div>
+                                
                                 <div style={{ height: 150, width: 500, backgroundColor: 'rgb(81, 146, 89)', color: 'white', borderRadius: 10, position: 'relative', float: 'right', marginTop: 0, marginLeft: 0, marginBottom: 20 }} className="card4">
                                     <div style={{ margin: 15, justifyContent: 'center', textAlign: 'left', padding: 0, border: 0 }} className="card-body">
                                         <h5 className="card-title">Net Profit Margin</h5>
@@ -118,8 +123,6 @@ class App extends React.Component {
                                         </h4>
                                     </div>
                                 </div>
-
-      
                                 
                                 
                             </div>
