@@ -3,21 +3,23 @@ import { Row } from 'simple-flexbox';
 import { StyleSheet, css } from 'aphrodite';
 import Logo from '../../assets/icon-logo';
 
+
 const styles = StyleSheet.create({
     container: {
         marginLeft: 32,
         marginRight: 32
     },
     title: {
-        fontFamily: 'Muli',
-        fontStyle: 'normal',
+        fontFamily: 'fantasy',
+        fontStyle: 'Bold',
         fontWeight: 'bold',
-        fontSize: 19,
-        lineHeight: '24px',
-        letterSpacing: '0.4px',
+        fontSize: 35,
+        lineHeight: '5px',
+        letterSpacing: '0.2px',
         color: '#000000',
-        opacity: 0.7,
-        marginLeft: 12
+        opacity: 1,
+        marginLeft: 15,
+        marginTop:0
     }
 });
 
@@ -25,7 +27,9 @@ function LogoComponent() {
     return (
         <Row className={css(styles.container)} horizontal="center" vertical="center">
             <Logo />
-            <span className={css(styles.title)}>Finance</span>
+           <h1>
+           <span className={css(styles.title)}>Finance</span>
+            </h1> 
         </Row>
     );
 }

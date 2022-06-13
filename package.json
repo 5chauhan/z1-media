@@ -10,9 +10,12 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "aphrodite": "^2.3.1",
     "canvasjs-react-charts": "^1.0.5",
+    "chart.js": "^3.8.0",
     "prop-types": "^15.7.2",
+    "react-chartjs-2": "^4.2.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "react-sweet-progress": "^1.1.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

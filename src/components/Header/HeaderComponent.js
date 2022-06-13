@@ -10,9 +10,12 @@ import {   faEnvelopeOpen } from '@fortawesome/fontawesome-free-solid'
 
 
 const styles = StyleSheet.create({
+    body:{
+       overflow:'scroll',
+    },
     avatar: {
-        height: 35,
-        width: 35,
+        height: 50,
+        width: 50,
         borderRadius: 50,
         marginLeft: 14,
         border: '1px solid #DFE0EB',
@@ -52,11 +55,14 @@ const styles = StyleSheet.create({
 function HeaderComponent(props) {
     const { icon, title, ...otherProps } = props;
     return (
-
+        <body>
         <Row className={css(styles.container)} vertical="center" horizontal="space-between" {...otherProps}>
             <span className={css(styles.title)}>{title}</span>
             <Row vertical="center">
             <FontAwesomeIcon icon={faSearch} />
+            
+
+           
 
                 <div className={css(styles.cursorPointer)}>
                 
@@ -85,10 +91,11 @@ function HeaderComponent(props) {
                     <img src={Img} alt="avatar" className={css(styles.avatar, styles.cursorPointer)} />
                     
                 </Row>
-               
+                
             </Row>
             
         </Row>
+        </body>
         
 
     );
